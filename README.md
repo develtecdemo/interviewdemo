@@ -4,7 +4,7 @@ Used https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating
 Ruby and Sinatra were also utilized per the docs \
 
 References: \
--- Use API to create repo with prams: \
+-- Use API to create repo with params: \
    curl -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token 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" -d '{"name": "apirepo1", "auto_init": true, "private": true}' https://api.github.com/user/repos \
 -- Script thi reference: \
    https://github.com/tkasyn/Create_Repo_Script_Input_Pipeline/blob/main/create_repository_git.sh \
