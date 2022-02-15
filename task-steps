@@ -1,0 +1,24 @@
+ENV for demo
+
+Windows 10
+PowerShell 5.1.19041.1320
+WSL2 Ubuntu 20.04.3
+Docker Desktop for Windows 4.4.4
+
+Created Org in GH
+Created demo repo in GH
+
+Created Webhooks using the GH docs and Sinatra with Ruby
+
+Setup pretected branch webhook processing utility in Docker
+- Running Docker on Windows, the localhost passing tends to be problematic
+   - Used ngrok to resolve this by getting/creating a publicly availabe name
+      - Running the docker container from PS was not passing the ENV Variables properly
+		   - This cause 401 errors when testing the repo creation webhook
+	  - Resolved the above issue by switching into WSL2, creating variables in bash shell, ran docker container from there
+	  - Was then able to get the post-repo creation branch protection and issue creation working by doing the following:
+      - First successful test achieved be redelivering the previously failed paylod
+      - Second test succeeded upon creation of a new test repo
+	  - After 2 successful tests it started failing on test 3
+			- Had to restart Docker Desktop completely to resolve the host/path not found 500 errors.
+			- Testing then succeeded again
