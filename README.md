@@ -3,6 +3,9 @@ Webhook info: \
 Used https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks \
 Ruby and Sinatra were also utilized per the docs \
 
+Auto Protected Branch Setup:
+https://github.com/deviantpoint/github-protected-branch-settings-service
+
 References: \
 -- Use API to create repo with params: \
    curl -X POST -H "Accept: application/vnd.github.v3+json" -H "Authorization: token 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" -d '{"name": "apirepo1", "auto_init": true, "private": true}' https://api.github.com/user/repos \
