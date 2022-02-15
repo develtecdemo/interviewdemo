@@ -1,7 +1,7 @@
 # interviewdemo
 Webhook info: \
 Used https://docs.github.com/en/developers/webhooks-and-events/webhooks/creating-webhooks \
-Ruby and Sinatra were also utilized per the docs \
+Ruby and Sinatra were also utilized per the docs 
 
 Auto Protected Branch Setup: \
 https://github.com/deviantpoint/github-protected-branch-settings-service
